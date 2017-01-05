@@ -30,8 +30,8 @@ class TableViewController: UITableViewController {
         nameMenu = ["Aperture", "Shutter", "ISO", "SD-Card"]
         identities = ["A", "B", "C","D"]
         
-        let icon1 = UIApplicationShortcutIcon(type: .add)
-        let icon2 = UIApplicationShortcutIcon(type: .love)
+        let icon1 = UIApplicationShortcutIcon(type: .love)
+        let icon2 = UIApplicationShortcutIcon(type: .add)
         let icon3 = UIApplicationShortcutIcon(type: .bookmark)
         
         let item1 = UIApplicationShortcutItem(type: "de.thomashirth.play", localizedTitle: "Abspielen", localizedSubtitle: "get the play", icon: icon1, userInfo: nil)
