@@ -15,6 +15,7 @@
 		072235C11E0359F100D5F76C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072235BF1E0359F100D5F76C /* LaunchScreen.storyboard */; };
 		072235CC1E0359F200D5F76C /* TableViewMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072235CB1E0359F200D5F76C /* TableViewMenuTests.swift */; };
 		072235D71E0359F200D5F76C /* TableViewMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072235D61E0359F200D5F76C /* TableViewMenuUITests.swift */; };
+		072235E51E035A9000D5F76C /* TBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072235E41E035A9000D5F76C /* TBVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		072235D21E0359F200D5F76C /* TableViewMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		072235D61E0359F200D5F76C /* TableViewMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewMenuUITests.swift; sourceTree = "<group>"; };
 		072235D81E0359F200D5F76C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		072235E41E035A9000D5F76C /* TBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				072235B31E0359F100D5F76C /* AppDelegate.swift */,
 				072235B51E0359F100D5F76C /* ViewController.swift */,
+				072235E41E035A9000D5F76C /* TBVC.swift */,
 				072235B71E0359F100D5F76C /* Main.storyboard */,
 				072235BD1E0359F100D5F76C /* Assets.xcassets */,
 				072235BF1E0359F100D5F76C /* LaunchScreen.storyboard */,
@@ -191,7 +194,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Thomas Hirth";
 				TargetAttributes = {
 					072235AF1E0359F100D5F76C = {
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				072235E51E035A9000D5F76C /* TBVC.swift in Sources */,
 				072235B61E0359F100D5F76C /* ViewController.swift in Sources */,
 				072235B41E0359F100D5F76C /* AppDelegate.swift in Sources */,
 				072235BC1E0359F100D5F76C /* TableViewMenu.xcdatamodeld in Sources */,
@@ -340,6 +344,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -390,6 +395,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -422,7 +428,7 @@
 				DEVELOPMENT_TEAM = 88S8384GY6;
 				INFOPLIST_FILE = TableViewMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TH.TableViewMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = de.thomashirth.TableViewMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -435,7 +441,7 @@
 				DEVELOPMENT_TEAM = 88S8384GY6;
 				INFOPLIST_FILE = TableViewMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TH.TableViewMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = de.thomashirth.TableViewMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -518,6 +524,7 @@
 				072235DD1E0359F200D5F76C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		072235DE1E0359F200D5F76C /* Build configuration list for PBXNativeTarget "TableViewMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +533,7 @@
 				072235E01E0359F200D5F76C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		072235E11E0359F200D5F76C /* Build configuration list for PBXNativeTarget "TableViewMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +542,7 @@
 				072235E31E0359F200D5F76C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

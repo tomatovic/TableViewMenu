@@ -13,10 +13,69 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
 
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        
+        
+        print("shortcut aufgerufen \(shortcutItem)")
+        
+        switch shortcutItem.type {
+            case "de.thomashirth.play":
+            print("test: \(shortcutItem)")
+            listShortcutA()
+        case "de.thomashirth.pause":
+            print("test: \(shortcutItem)")
+            listShortcutB()
+            
+        default:
+            print("unbekannt: \(shortcutItem.type)")
+        }
+        
+        
+    }
+
+    
+    private func listShortcutA () {
+        let navCtrl = window?.rootViewController as! UINavigationController
+        let mainCtrl = navCtrl.topViewController as! TableViewController
+        
+        mainCtrl.performListshortcutViewA()
+    }
+    
+    private func listShortcutB () {
+        let navCtrl = window?.rootViewController as! UINavigationController
+        let mainCtrl = navCtrl.topViewController as! TableViewController
+        
+        mainCtrl.performListshortcutViewB()
+    }
+
+    
+    
+    
+
+ 
+
+
+   
+
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+    /* let downloadedHookup = "Kim"
+        
+        if let shortcutItems = application.shortcutItems, shortcutItems.isEmpty{
+            let dynamicShortcut = UIMutableApplicationShortcutItem(type: "Hookup", localizedTitle: "Hookup", localizedSubtitle: "Start a fling with \(downloadedHookup)", icon: UIApplicationShortcutIcon(type: .play), userInfo: nil)
+            application.shortcutItems = [dynamicShortcut]
+        }
+        
+    */
+        
+        
+        
+        
         return true
     }
 
@@ -44,6 +103,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.saveContext()
     }
 
+    /*
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        
+        if let tabVC = self.window?.rootViewController as? UITableViewController {
+            if shortcutItem.type == "de.thomashirth.search" {
+                tabVC.selctedIndex = 0
+                
+                
+            } else if shortcutItem.type == "Hookup" {
+                tabVC.selctedIndex = 1
+            }
+        }
+    }
+    */
+    
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {
